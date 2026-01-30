@@ -1,0 +1,349 @@
+body {
+    margin: 0;
+    background-color: #f8f8f8;}
+
+
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;}
+
+
+
+.uk-offcanvas-bar {
+    background-color: #fff;
+    color: #666;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);}
+.uk-offcanvas-bar .uk-offcanvas-close {
+    color: #666;}
+.uk-offcanvas-bar .uk-offcanvas-close:hover {
+    color: #000000;}
+.uk-offcanvas-bar a.uk-margin-small {
+    width: 100%;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #e5e5e5;}
+.uk-offcanvas-bar a.uk-margin-small:hover {
+    width: 100%;
+    background-color: transparent;
+    color: #333;
+    border-color: #b2b2b2;}
+
+    
+    
+.uk-button-default {
+    line-height: 1.2!important;
+    padding: 13px!important;}
+    
+    
+    
+.uk-input, .uk-select, .uk-textarea {
+    border: 1px solid #1e87f0;}
+.uk-input:disabled, .uk-select:disabled, .uk-textarea:disabled {
+    background-color: #f8f8f8;
+    color: #666;
+    border-color: #1e87f0;}
+.uk-select {
+    height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+    padding: 0 10px;
+    background: #fff;
+    color: #666;
+    border: 1px solid #1e87f0;}
+#files {
+    padding: 6px;}
+p.operator {
+    margin: 0;
+    font-size: 11px;
+    top: 10px;
+    left: 10px;}
+p.old-value {
+    margin: 0;
+    font-size: 12px;}
+p.old-value span {
+    color: #000000;
+    font-weight: 700;}
+    
+    
+    
+button.uk-ticket-button {
+    width: 100%;
+    line-height: 1.4;
+    min-height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;}
+button.uk-ticket-button span {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: red;}
+
+
+
+.uk-ticket-button-station-items {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;}
+button.uk-ticket-button-station-start {
+    margin: 5px!important;
+    width: fit-content;
+    height: auto;
+    padding: 4px!important;
+    text-transform: none;
+    font-weight: 700;}
+button.uk-ticket-button-station-finish {
+    margin: 5px!important;
+    width: fit-content;
+    height: auto;
+    padding: 4px!important;
+    text-transform: none;
+    font-weight: 700;}
+.uk-ticket-button-station-items button.station_select {
+    background-color: #52af52;}
+.price-itm {
+    margin: 0;
+    font-size: 12px;}
+
+
+
+button.uk-ticket-seat {
+    position: relative;
+    margin: 5px;
+    padding: 0;
+    line-height: 1.4;
+    width: 45px;
+    min-height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;}
+button.uk-ticket-seat:hover {
+    background-color: #52af52;}
+button.uk-ticket-edit-seat {
+    margin: 5px;
+    padding: 0;
+    line-height: 1.4;
+    width: 45px;
+    min-height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;}
+button.uk-ticket-edit-seat:hover {
+    background-color: #52af52;}
+button.uk-mass-reserv-seat {
+    position: relative;
+    margin: 5px;
+    padding: 0;
+    line-height: 1.4;
+    width: 45px;
+    min-height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;}
+button.uk-mass-reserv-seat:hover {
+    background-color: #00a4ff;}
+button.seat_select_mass {
+    position: relative;
+    background-color: #00a4ff!important;}
+button.seat_reserv {
+    position: relative;
+    background-color: #ff5d5d!important;
+    color: #333!important;}
+button.seat_select {
+    position: relative;
+    background-color: #52af52!important;}
+button.seat_pay {
+    position: relative;
+    background-color: #ffa200!important;
+    color: #333!important;}
+p.noconfirm {
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    font-size: 12px;
+    color: #000000;}
+p.confirm {
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    font-size: 12px;
+    color: #48ff00;}
+p.noappeared {
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    font-size: 12px;
+    color: #000000;}
+p.appeared {
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    font-size: 12px;
+    color: #000000;}
+
+button.seat_select_mass_for_agent {
+    position: relative;
+    color: #333!important;
+    background-color: #00a4ff!important;}
+button.uk-mass-reserv-seat-agent {
+    position: relative;
+    margin: 5px;
+    padding: 0;
+    line-height: 1.4;
+    width: 45px;
+    min-height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;}
+button.uk-mass-reserv-seat-agent:hover {
+    background-color: #dc80ff;}
+button.agent-seat_select_mass {
+    position: relative;
+    background-color: #dc80ff;}
+button.seat_select_mass_agent {
+    position: relative;
+    background-color: #dc80ff;}
+button.seat_select {
+    position: relative;
+    background-color: #52af52!important;}
+    
+    
+    
+.reestr_seat {
+    max-height: 200px;
+    overflow: auto;
+    margin: 10px 0 0 0;
+    border: 1px solid #e5e5e5;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;}
+.reestr_seat p.reestr_seat_item {
+    margin: 5px 0 5px 0;
+    line-height: 0.9;}
+.reestr_seat p.reestr_seat_item span{
+    font-size: 12px;}
+.filter {
+    position: absolute;
+    top: 10px;
+    right: 10px;}
+.filter-elem {
+    display: flex;
+    align-items: center;}
+.filter_icon {
+    cursor: pointer;
+    margin: 0 10px 0 0;}
+#search_tickets {
+    height: 28px;
+    width: 270px;}
+    
+    
+    
+.reestr_passenger {
+    max-height: 200px;
+    overflow: auto;
+    margin: 10px 0 0 0;
+    border: 1px solid #e5e5e5;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;}
+.reestr_passenger p.passengers_item {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 700;
+    margin: 3px 0 3px 0;}
+.reestr_passenger p.passengers_item span {
+    font-weight: 400;}
+.reestr_passenger p.passengers_item:hover {
+    color: green;
+    font-weight: 700;}
+.reestr_passenger p.passenger_select {
+    color: green;
+    font-weight: 700;}
+.messages {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    font-weight: 500;}
+.warning {
+    margin: 0;
+    text-align: center;
+    font-weight: 500;}
+
+
+
+.sb_switсh {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 15px;}
+.sb_switch_item {
+    margin: 0 10px 0 0;
+    font-size: 12px;
+    font-weight: 700;}
+.sb_occupied {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 43px;
+    height: 10px;
+    background-color: #6c6c6c;}
+.sb_error {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 43px;
+    height: 10px;
+    background-color: red;}
+button.sb_seat_reserv {
+    position: relative;
+    background-color: #ffffff!important;
+    color: #333!important;}
+
+
+
+.demo-seat {
+    position: relative;
+    margin: 5px;
+    padding: 0;
+    line-height: 1.4;
+    min-width: 45px;
+    min-height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #e5e5e5;}
+.legend-title {
+    margin: 0 0 0 5px;
+    line-height: 1;}
+.sb-marker {
+    margin: 0;
+    position: absolute;
+    top: -1px;
+    right: 2px;
+    font-size: 10px;
+    color: #000000;}
+
+
+
+/*Стили плагинов*/
+.bswasp-default-layout__inner {
+    width: 100%!important;}
