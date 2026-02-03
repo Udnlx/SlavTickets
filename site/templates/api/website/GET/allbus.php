@@ -19,6 +19,7 @@ foreach ($bus_pages as $bus) {
 
 	$all_bus[] = [
 	"id" => $bus->id,
+	"idRoute" => $item->id,
 	"name" => $departure_point . ' - ' . $destination_point,
 	"departurePoint" => $departure_point,
 	"departureTime" => $departure_time,

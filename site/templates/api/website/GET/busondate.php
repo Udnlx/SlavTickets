@@ -41,6 +41,7 @@ if ($input->get['departure'] && $input->get['from'] && $input->get['to']) {
 
 								$all_bus_ondate[] = [
 								"id" => $bus->id,
+								"idRoute" => $item->id,
 								"name" => $departure_point . ' - ' . $destination_point,
 								"departurePoint" => $departure_point,
 								"departureTime" => $departure_time,
@@ -62,22 +63,6 @@ if ($input->get['departure'] && $input->get['from'] && $input->get['to']) {
 			}
 		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	$result["allBusOnDate"] = $all_bus_ondate;
 

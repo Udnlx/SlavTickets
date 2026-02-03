@@ -37,6 +37,7 @@ if ($input->get['departure']) {
 
 							$all_bus_ondate[] = [
 							"id" => $bus->id,
+							"idRoute" => $item->id,
 							"name" => $departure_point . ' - ' . $destination_point,
 							"departurePoint" => $departure_point,
 							"departureTime" => $departure_time,
