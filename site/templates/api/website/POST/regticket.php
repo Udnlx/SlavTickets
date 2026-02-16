@@ -154,40 +154,40 @@ if (isset($data['idBus'])) {
 			}
 
 			if ($forreg_seat != 0) {
-			    // //РЕГЕСТРИРУЕМ БИЛЕТ В СИСТЕМЕ//
-			    // $pages->add('purchased_tickets', 1026 , [
-			    // 'title' => $forreg_bus . ' - ' . $forreg_date_departure . ' ' . $forreg_time_departure . ' место-' . $forreg_seat,
-			    // 'bus' => $forreg_bus,
-			    // 'id_bus' => $forreg_id_bus,
-			    // 'date_depart' => $forreg_date_departure,
-			    // 'time_depart' => $forreg_time_departure,
-			    // 'id_station' => $forreg_id_ss,
-			    // 'name_station' => $forreg_ss_name,
-			    // 'id_station_finish' => $forreg_id_sf,
-			    // 'name_station_finish' => $forreg_sf_name,
-			    // 'seat' => $forreg_seat,
-			    // 'pay_or_booking' => $forreg_pay_or_booking,
-			    // 'booking_sum' => $forreg_booking_sum,
-			    // 'confirm' => $forreg_confirm,
-			    // 'type_ticket' => $forreg_type_ticket,
-			    // 'id_passenger' => $forreg_id_passenger,
-			    // 'passenger' => $forreg_passenger,
-			    // 'passenger_doc' => $forreg_passenger_doc,
-			    // 'operator' => $forreg_operator,
-			    // 'agent_ticket' => $forreg_agent_ticket,
-			    // 'price_ticket' => $forreg_price_ticket,
-			    // 'comment' => $forreg_comment,
-			    // 'sb_bus_id' => $uid,
-			    // 'sb_ticket_id' => $answer_confirm_order['tickets'][0]['id'],
-			    // ]);
-			    // $ticket_page = $pages->get('title=' . $forreg_bus . ' - ' . $forreg_date_departure . ' ' . $forreg_time_departure . ' место-' . $forreg_seat . '');
-				// $ticket_id = $ticket_page->id;
+			    //РЕГЕСТРИРУЕМ БИЛЕТ В СИСТЕМЕ//
+			    $pages->add('purchased_tickets', 1026 , [
+			    'title' => $forreg_bus . ' - ' . $forreg_date_departure . ' ' . $forreg_time_departure . ' место-' . $forreg_seat,
+			    'bus' => $forreg_bus,
+			    'id_bus' => $forreg_id_bus,
+			    'date_depart' => $forreg_date_departure,
+			    'time_depart' => $forreg_time_departure,
+			    'id_station' => $forreg_id_ss,
+			    'name_station' => $forreg_ss_name,
+			    'id_station_finish' => $forreg_id_sf,
+			    'name_station_finish' => $forreg_sf_name,
+			    'seat' => $forreg_seat,
+			    'pay_or_booking' => $forreg_pay_or_booking,
+			    'booking_sum' => $forreg_booking_sum,
+			    'confirm' => $forreg_confirm,
+			    'type_ticket' => $forreg_type_ticket,
+			    'id_passenger' => $forreg_id_passenger,
+			    'passenger' => $forreg_passenger,
+			    'passenger_doc' => $forreg_passenger_doc,
+			    'operator' => $forreg_operator,
+			    'agent_ticket' => $forreg_agent_ticket,
+			    'price_ticket' => $forreg_price_ticket,
+			    'comment' => $forreg_comment,
+			    'sb_bus_id' => $uid,
+			    'sb_ticket_id' => $answer_confirm_order['tickets'][0]['id'],
+			    ]);
+			    $ticket_page = $pages->get('title=' . $forreg_bus . ' - ' . $forreg_date_departure . ' ' . $forreg_time_departure . ' место-' . $forreg_seat . '');
+				$ticket_id = $ticket_page->id;
 
-			    // $log = '';
-			    // $log .= date('Y-m-d H:i:s') . ' - Зарегистрирован новый билет id - ' . $ticket_id . ' оператором ' . $forreg_operator . '.   ';
-			    // $log .= 'Данные билета: ' . $ticket_page->title . ' - ' . $forreg_passenger;
-			    // file_put_contents(__DIR__ . '/../../../log_regticket_api.txt', $log . PHP_EOL, FILE_APPEND);
-			    // //РЕГЕСТРИРУЕМ БИЛЕТ В СИСТЕМЕ//
+			    $log = '';
+			    $log .= date('Y-m-d H:i:s') . ' - Зарегистрирован новый билет id - ' . $ticket_id . ' оператором ' . $forreg_operator . '.   ';
+			    $log .= 'Данные билета: ' . $ticket_page->title . ' - ' . $forreg_passenger;
+			    file_put_contents(__DIR__ . '/../../../log_regticket_api.txt', $log . PHP_EOL, FILE_APPEND);
+			    //РЕГЕСТРИРУЕМ БИЛЕТ В СИСТЕМЕ//
 
 			    $result["message"] = $message;
 			    $result["idTicket"] = $ticket_id;
