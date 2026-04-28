@@ -122,14 +122,14 @@ foreach ($arr_reserv_seat as $key => $val) {
     $sb_disabled = '';
     $sb_occupied = '';
     $sb_on = '';
-    if (in_array($val['seat'], $sb_free_seats)) {
-        $sb_occupied = '<p class="sb_occupied"></p>'; 
-    }
-    if (in_array($val['seat'], $sb_occupied_seats)) {
-        $sb_disabled = 'disabled';
-        $sb_occupied = '<p class="sb-marker">1С</p>'; 
-        $sb_on = 'on';
-    }
+    // if (in_array($val['seat'], $sb_free_seats)) {
+    //     $sb_occupied = '<p class="sb_occupied"></p>'; 
+    // }
+    // if (in_array($val['seat'], $sb_occupied_seats)) {
+    //     $sb_disabled = 'disabled';
+    //     $sb_occupied = '<p class="sb-marker">1С</p>'; 
+    //     $sb_on = 'on';
+    // }
 
     $data_passenger = $pages->get('template=passengers, id=' . $val['id_passenger'] . '');
     $phone_passenger = $data_passenger->phone_passenger;
