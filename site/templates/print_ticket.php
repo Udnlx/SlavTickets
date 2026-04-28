@@ -154,10 +154,10 @@ if ($array_param_finish[1]) {
 }
 
 $content .= '
-<img class="logo_ticket" src="https://lk.olimp-tickets.ru/site/assets/images/logo-olimp.png" alt="">
-<p class="maintext">ОЛИМП</p>
-<p class="textheader">г. Люберцы, ул. Комсомольская, 15</p>
-<p class="textheader_last">тел: 8(926)947-55-55</p>
+<img class="logo_ticket" style="width:300px; height:auto" src="http://slavtickets/site/assets/images/logo-slav.png" alt="">
+<p class="maintext">Слав Билет</p>
+<!--<p class="textheader">г. Люберцы, ул. Комсомольская, 15</p>-->
+<p class="textheader_last">тел: +7 (905) 387-00-00</p>
 
 <h2 style="margin: 50px 0 20px 0;">Билет №' . $ticket->id . ' от ' . $ticket_date . '</h2>
 
@@ -192,9 +192,7 @@ $content .= '
     <p>Москва – Стаханов</p>
     <br>
     <p><strong>Заказ Билетов не выходя из дома</strong></p>
-    <p>+7 (926) 947-55-55</p>
-    <p>+7 (959) 276-48-12</p>
-    <p>+7 (916) 021-30-05</p>
+    <p>+7 (905) 387-00-00</p>
     <br>
     <!--
     <p><strong>Наше расписание:</strong></p>
@@ -202,8 +200,9 @@ $content .= '
     <br>
     -->
     <p>Пришлем электронный билет Вам на телефон (Вотсап, Телеграм).</p>
-    <p>Оплата в Автобусе наличными водителю или на сайте olimp-tickets.ru</p>
+    <p>Оплата в Автобусе наличными водителю или на сайте slav-bilet.ru</p>
 
+    <!--
     <div class="qr-code">
         <p class="qr-code-text" style="text-align:center;">Скидка 20% на заказ через приложение</p>
         <div class="qr-links">
@@ -215,6 +214,7 @@ $content .= '
             <img class="qr-code-img" src="https://lk.olimp-tickets.ru/site/assets/images/qr-code2.png" alt="">
         </div>
     </div>
+    -->
 </div>
 ';
 
