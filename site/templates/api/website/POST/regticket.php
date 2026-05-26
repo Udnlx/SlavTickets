@@ -148,7 +148,7 @@ if (isset($data['idBus'])) {
 			for ($i = 1; $i <= 53; $i++) {
 			    if (!in_array($i, $arr_reserv_seat)) {
 			        $firstFree = $i;
-			        $forreg_seat = $firstFree;
+			        $forreg_seat = sprintf('%02d', $firstFree);
 			        break;
 			    }
 			}
