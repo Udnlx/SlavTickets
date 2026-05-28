@@ -43,6 +43,8 @@ if ($input->get['departure'] && $input->get['idbus'] && $input->get['idroute']) 
 		}
 	}
 
+	$carrier_email = $id_bus->email;
+
 	$routeparam[] = [
 	"id" => $id_bus,
 	"idRoute" => $id_route,
@@ -61,6 +63,7 @@ if ($input->get['departure'] && $input->get['idbus'] && $input->get['idroute']) 
 	"carrier" => $bus->carrier,
 	"freeSeats" => $free_seat,
 	"departure" => $departure_date,
+	"carrierEmail" => $carrier_email,
 	];
 
 	$result["routeparam"] = $routeparam;
