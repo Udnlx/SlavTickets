@@ -43,7 +43,7 @@ if ($input->get['departure'] && $input->get['idbus'] && $input->get['idroute']) 
 		}
 	}
 
-	$carrier_email = $id_bus->email;
+	$carrier_email = $bus->email;
 
 	$routeparam[] = [
 	"id" => $id_bus,
