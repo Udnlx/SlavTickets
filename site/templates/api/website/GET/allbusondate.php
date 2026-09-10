@@ -49,6 +49,7 @@ if ($input->get['departure']) {
 							"destinationStation" => $destination_station,
 							"price" => $item->price_ticket,
 							"carrier" => $bus->carrier,
+							"markerHit" => $bus->marker_hit,
 							"freeSeats" => $free_seat,
 							"departure" => $departure_date,
 							];
