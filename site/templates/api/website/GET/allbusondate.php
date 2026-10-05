@@ -61,6 +61,17 @@ if ($input->get['departure']) {
 		}
 	}
 
+	usort($all_bus_ondate, function ($a, $b) {
+		$price_a = (int) $a['price'];
+		$price_b = (int) $b['price'];
+
+		if ($price_a !== $price_b) {
+			return $price_a <=> $price_b;   // дешёвые вверх
+		}
+
+		return strcmp($a['departureTime'], $b['departureTime']);  // равная цена — по времени
+	});
+
 	$result["allBusOnDate"] = $all_bus_ondate;
 
 } else {
